@@ -11,7 +11,7 @@ echo "Sorry the other install types are still under development"
 #echo "(4) Full distro conversion (for fresh ubuntu install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts
 #echo "(5) Windows For Linux Distro Setup (for fresh ubuntu wsl install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts, XRDP, and GUI
 echo ""
-echo "(0) exit"
+echo "(Ctrl C) exit"
 read -p "Type: " typw
 if $type -eq 1
 then
@@ -22,9 +22,6 @@ then
 	sudo add-apt-repository -qq 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 	sudo apt-get -qq update -y
 	sudo apt-get -qq install -y wine64 wine32
-if $type -eq 0
-then
-	exit 0
 else
 	echo "Sorry this feature is under development"
 fi
