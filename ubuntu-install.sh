@@ -12,11 +12,8 @@ echo "(4) Windows For Linux ubuntu setup (XFCE4, XRDP, ZSH, P10K)"
 echo "(x) Full distro setup (for fresh ubuntu install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts
 echo "(x) Windows For Linux Distro Setup (for fresh ubuntu wsl install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts, XRDP, and GUI
 echo ""
-echo "(0) exit"
+echo "(CTRL C) exit"
 read -p "Type: " type
-if [ $type -eq 0 ] #exit
-then
-	exit 0
 if [ $type -eq 1 ] #wine install
 then
 	echo "Installing wine"
