@@ -17,9 +17,9 @@ if [ $type -eq 1 ]
 then
 	echo "Installing wine"
 	sudo dpkg --add-architecture i386
-	wget -nc https://dl.winehq.org/wine-builds/winehq.key
-	sudo apt-key -qq add winehq.key
-	sudo add-apt-repository -qq 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+	wget -nc -q https://dl.winehq.org/wine-builds/winehq.key
+	sudo apt-key -q add winehq.key
+	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 	sudo apt-get -qq update -y
 	sudo apt-get -qq install -y wine64 wine32
 else
