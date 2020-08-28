@@ -1,7 +1,7 @@
 echo "Any-App setup script V0.2"
 echo "An update and upgrade will be run to make sure the system is ready for install"
-sudo apt-get -qq update -y
-sudo apt-get -qq upgrade  -y
+sudo apt-get update -y > /dev/null 2>&1
+sudo apt-get upgrade -y > /dev/null 2>&1
 #User choses what to install
 echo "What type of install do you want:"
 echo "(1) Windows EXE (wine)" #Installs WINE
@@ -16,12 +16,12 @@ read -p "Type: " type
 if [ $type -eq 1 ]
 then
 	echo "Installing wine"
-	sudo dpkg --add-architecture i386
-	wget -nc -q https://dl.winehq.org/wine-builds/winehq.key
-	sudo apt-key -q add winehq.key
-	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-	sudo apt-get -qq update -y
-	sudo apt-get -qq install -y wine64 wine32
+	sudo dpkg --add-architecture i386 > /dev/null 2>&1
+	wget -nc https://dl.winehq.org/wine-builds/winehq.key > /dev/null 2>&1
+	sudo apt-key add winehq.key > /dev/null 2>&1
+	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' > /dev/null 2>&1
+	sudo apt-get update -y > /dev/null 2>&1
+	sudo apt-get install -y wine64 wine32
 else
 	echo "Sorry this feature is under development"
 fi
