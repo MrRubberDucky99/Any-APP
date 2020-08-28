@@ -24,7 +24,7 @@ then
 	sudo apt-get -qq install -y wine64 wine32
 if $type -eq 0
 then
-	exit
+	exit 0
 else
 	echo "Sorry this feature is under development"
 fi
