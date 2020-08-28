@@ -10,7 +10,7 @@ echo "Sorry the other install types are still under development"
 #echo "(B) Both" #Installs Both
 #echo "(F) Full distro conversion (for fresh ubuntu install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts
 #echo "(WSL) Windows For Linux Distro Setup (for fresh ubuntu wsl install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts, XRDP, and GUI
-read InstallType
+read -p "Type: " InstallType
 if $InstallType -eq W
 then
 	echo "Installing wine"
