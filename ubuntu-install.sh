@@ -12,7 +12,7 @@ echo "Sorry the other install types are still under development"
 #echo "(5) Windows For Linux Distro Setup (for fresh ubuntu wsl install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts, XRDP, and GUI
 echo ""
 echo "(Ctrl C) exit"
-read -p "Type: " typw
+read -p "Type: " type
 if $type -eq 1
 then
 	echo "Installing wine"
@@ -22,6 +22,9 @@ then
 	sudo add-apt-repository -qq 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 	sudo apt-get -qq update -y
 	sudo apt-get -qq install -y wine64 wine32
+if $type -eq 0
+then
+	exit 0
 else
 	echo "Sorry this feature is under development"
 fi
