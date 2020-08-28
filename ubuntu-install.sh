@@ -30,7 +30,7 @@ then
 	sudo apt-get -qq install -y wine64 wine32
 	echo "100%"
 	echo "Wine Installed. Now exiting AnyApp."
-if [ $type -eq 4 ] #wsl setup
+elif [ $type -eq 4 ] #wsl setup
 then
 	echo "Installing XFCE4"
 	sudo apt-get -qq install xfce4 xfce4-goodies -y 
