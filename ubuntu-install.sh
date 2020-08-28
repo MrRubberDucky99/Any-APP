@@ -13,7 +13,7 @@ echo "Sorry the other install types are still under development"
 echo ""
 echo "(Ctrl C) exit"
 read -p "Type: " type
-if [$type -eq 1]
+if [ $type -eq 1 ]
 then
 	echo "Installing wine"
 	sudo dpkg --add-architecture i386
