@@ -13,7 +13,7 @@ echo "Sorry the other install types are still under development"
 echo ""
 echo "(Ctrl C) exit"
 read -p "Type: " type
-if $type -eq 1
+if [$type -eq 1]
 then
 	echo "Installing wine"
 	sudo dpkg --add-architecture i386
@@ -22,9 +22,6 @@ then
 	sudo add-apt-repository -qq 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 	sudo apt-get -qq update -y
 	sudo apt-get -qq install -y wine64 wine32
-if $type -eq 0
-then
-	exit 0
 else
 	echo "Sorry this feature is under development"
 fi
