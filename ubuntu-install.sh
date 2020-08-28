@@ -7,7 +7,7 @@ sudo apt-get -qq install git -y
 echo "What type of install do you want:"
 echo "(1) Windows EXE (wine)" #Installs WINE
 echo "(x) MacOS APP (darling)" #Installs Darling
-echo "(x) Both" #Installs Both
+echo "(x) Both (wine, darling)" #Installs Both
 echo "(4) Windows For Linux ubuntu setup (XFCE4, XRDP, ZSH, P10K)"
 echo "(x) Full distro setup (for fresh ubuntu install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts
 echo "(x) Windows For Linux Distro Setup (for fresh ubuntu wsl install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts, XRDP, and GUI
