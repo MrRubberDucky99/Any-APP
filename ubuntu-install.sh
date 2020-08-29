@@ -45,6 +45,7 @@ then
 	echo "100%"
 	echo "Installing ZSH"
 	sudo apt-get -qq install zsh -y
+	cp zshrc ~/.zshrc
 	echo "50%"
 	sudo chsh -s /bin/zsh
 	chsh -s /bin/zsh
@@ -70,6 +71,7 @@ elif [ $type -eq 5 ] #part distro setup
 then
 	echo "Installing ZSH"
 	sudo apt-get -qq install zsh -y
+	cp zshrc ~/.zshrc
 	echo "50%"
 	sudo chsh -s /bin/zsh
 	chsh -s /bin/zsh
