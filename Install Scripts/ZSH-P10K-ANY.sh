@@ -7,14 +7,13 @@ sudo chsh -s /bin/zsh
 chsh -s /bin/zsh
 echo "100%"
 echo "Installing  fonts for P10K"
-mkdir ~/fonts/ && cd ~/fonts/
-echo "Fonts will be store in ~/fonts/ and will need installing"
+sudo apt-get -qq install font-manager -y > /dev/null 2>&1
 echo "25%"
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip  > /dev/null 2>&1
+mkdir ~/.fonts
 echo "50%"
-unzip hack.zip
+mv "Resources/Hack Regular Nerd Font Complete.ttf" ~/fonts/ && mv "Resources/Hack Regular Nerd Font Complete Mono.ttf" ~/fonts/
 echo "75%"
-cd
+fc-cache -f -v > /dev/null 2>&1
 echo "100%"
 echo "You will need to change your font settings in terminal to Hack Nerd Font for P10K to work best"
 echo "Installing P10k"
