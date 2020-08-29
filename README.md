@@ -1,6 +1,10 @@
 # AnyAPP
-This is a script that will install software like wine &amp; darling to allow the user to run EXE or APP on linux and WSL2.
-Thsi script will eventualy be turned into a linux distro, and the script will be able to configure a ubuntu install to have all the software and features of the distro.
+AnyApp is a script that installs popular tools like wine and darling, allowing the user to run macOS .app (darling) and windows .exe (wine) files.
+This means that after running thsi script the user can run almost any executiable file.
+For more informatin read the [Wiki](https://github.com/MrRubberDucky99/Any-APP/wiki)
+
 ## Supported Distros
-### ALL INSTALL SCRIPTRS ARE STILL UNDER DEVELOPMENT
 Check what is suported in your distro: [Wiki](https://github.com/MrRubberDucky99/Any-APP/wiki/Supported-Distros#install-types)
+
+## Troubleshooting
+Troubleshooting for all apps can be found via the [Wiki]() (Troubleshooting wiki is currently not avaliable.)
