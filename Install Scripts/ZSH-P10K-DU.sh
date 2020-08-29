@@ -1,4 +1,4 @@
-#ZSH Install V1
+#ZSH Debian Ubuntu Install V1
 echo "Installing ZSH"
 sudo apt-get -qq install zsh -y > /dev/null 2>&1
 cp "Resources/zshrc" ~/.zshrc

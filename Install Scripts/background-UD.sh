@@ -1,3 +1,4 @@
+#Background ubuntu debian setup v1
 echo "Installing Backgound"
 cp "Resources/AnyApp-Background.png" /usr/share/backgrounds/
 echo "50%"

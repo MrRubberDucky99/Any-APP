@@ -1,4 +1,4 @@
-echo "Any-App setup script V1"
+echo "Any-App setup script V1.1"
 echo "An update, upgrade and git install will be run to make sure the system is ready for install"
 sudo apt-get update -y > /dev/null 2>&1
 sudo apt-get upgrade -y > /dev/null 2>&1
@@ -33,7 +33,7 @@ then
 	bash "Install Scripts/XFCE-XRDP-DU.sh"
 	bash "Install Scripts/ZSH-P10K-ANY.sh"
 	bash "Install Scripts/wine-DU.sh"
-	bash "Install Scripts/background-U.sh"
+	bash "Install Scripts/background-UD.sh"
 	echo "AnyApp will now exit"
 else
 	echo "Sorry this feature is not avaliable. Now exiting AnyApp"
