@@ -9,7 +9,7 @@ echo "(1) Windows EXE (wine)" #Installs WINE
 echo "(x) MacOS APP (darling)" #Installs Darling
 echo "(x) Both (wine, darling)" #Installs Both
 echo "(4) Windows For Linux ubuntu setup (XFCE4, XRDP, ZSH, P10K)"
-echo "(5) Partial Distro setup"
+echo "(x) Partial Distro setup"
 echo "(x) Full distro setup (for fresh ubuntu install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts
 echo "(x) Windows For Linux Distro Setup (for fresh ubuntu wsl install only)" #Installs both and sets up background, ZSH, P10K, Nerd Fonts, XRDP, and GUI
 echo ""
@@ -24,11 +24,6 @@ then
 	bash "Install Scripts/XFCE-XRDP-DU.sh"
 	bash "Install Scripts/ZSH-P10K-ANY.sh"
 	echo "AnyApp will now exit"
-elif [ $type -eq 5 ] #part distro setup
-then
-	bash "Install Scripts/ZSH-P10K-ANY.sh"
-	echo "AnyApp will now exit"
-
 else
 	echo "Sorry this feature is under development. Now exiting AnyApp"
 fi
