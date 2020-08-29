@@ -50,14 +50,13 @@ then
 	chsh -s /bin/zsh
 	echo "100%"
 	echo "Installing  fonts for P10K"
-	mkdir -p ~/.local/share/fonts
-	echo "20%"
-	cd ~/.local/share/fonts
-	echo "40%"
+	mkdir ~/fonts/ && cd ~/fonts/
+	echo "Fonts will be store in ~/fonts/ and will need installing"
+	echo "25%"
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
-	echo "60%"
+	echo "50%"
 	unzip hack.zip
-	echo "80%"
+	echo "75%"
 	cd
 	echo "100%"
 	echo "You will need to change your font settings in terminal to Hack Nerd Font for P10K to work best"
@@ -76,14 +75,13 @@ then
 	chsh -s /bin/zsh
 	echo "100%"
 	echo "Installing  fonts for P10K"
-	mkdir -p ~/.local/share/fonts
-	echo "20%"
-	cd ~/.local/share/fonts
-	echo "40%"
+	mkdir ~/fonts/ && cd ~/fonts/
+	echo "Fonts will be store in ~/fonts/ and will need installing"
+	echo "25%"
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
-	echo "60%"
+	echo "50%"
 	unzip hack.zip
-	echo "80%"
+	echo "75%"
 	cd
 	echo "100%"
 	echo "You will need to change your font settings in terminal to Hack Nerd Font for P10K to work best"
