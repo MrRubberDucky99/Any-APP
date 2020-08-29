@@ -1,4 +1,4 @@
-echo "Any-App update script V1.1"
+echo "Any-App update script V1.2"
 echo "An update, upgrade and git install will be run to make sure the system is ready for install"
 sudo apt-get update -y > /dev/null 2>&1
 sudo apt-get upgrade -y > /dev/null 2>&1
