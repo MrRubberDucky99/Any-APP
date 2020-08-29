@@ -1,3 +1,4 @@
+#XFCE4 & XRDP Debian Ubuntu install V1
 echo "Installing XFCE4"
 sudo apt-get -qq install xfce4 xfce4-goodies -y  > /dev/null 2>&1
 echo "100%"

@@ -1,6 +1,7 @@
+#ZSH Install V1
 echo "Installing ZSH"
 sudo apt-get -qq install zsh -y > /dev/null 2>&1
-cp zshrc ~/.zshrc
+cp "Resources/zshrc" ~/.zshrc
 echo "50%"
 sudo chsh -s /bin/zsh
 chsh -s /bin/zsh

@@ -1,3 +1,4 @@
+#wine Debian Ubuntu install V1
 echo "Installing wine"
 sudo dpkg --add-architecture i386 > /dev/null 2>&1
 echo "16%"

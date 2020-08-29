@@ -1,3 +1,4 @@
+#Darling Ubuntu install V1
 echo "Installing Darling Prerequisites"
 sudo apt-get -qq install -y python2 cmake clang bison flex libfuse-dev libudev-dev pkg-config libc6-dev-i386 \
 linux-headers-generic gcc-multilib libcairo2-dev libgl1-mesa-dev libglu1-mesa-dev libtiff5-dev \

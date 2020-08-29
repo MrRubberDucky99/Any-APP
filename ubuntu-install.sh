@@ -1,4 +1,4 @@
-echo "Any-App setup script V0.4"
+echo "Any-App setup script V0.8"
 echo "An update, upgrade and git install will be run to make sure the system is ready for install"
 sudo apt-get update -y > /dev/null 2>&1
 sudo apt-get upgrade -y > /dev/null 2>&1
@@ -19,11 +19,11 @@ if [ $type -eq 1 ] #wine install
 then
 	bash "Install Scripts/wine-DU.sh"
 	echo "Wine Installed. Now exiting AnyApp."
-	elif [ $type -eq 2 ] #wsl setup
+elif [ $type -eq 2 ] #wsl setup
 then
 	bash "Install Scripts/darling-U.sh"
 	echo "AnyApp will now exit"
-	elif [ $type -eq 3 ] #wsl setup
+elif [ $type -eq 3 ] #wsl setup
 then
 	bash "Install Scripts/wine-DU.sh"
 	bash "Install Scripts/darling-U.sh"
